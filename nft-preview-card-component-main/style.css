@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+/*--SETUP--*/
+:root {
+  --main-blue: hsl(217, 54%, 11%);
+  --card-blue: hsl(216, 50%, 16%);
+  --line-blue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --cyan:hsl(178, 100%, 50%);
+}
+
+/*--Primary Styling--*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-blue);
+  font-family: Outfit, sans-serif;
+  color: var(--White);
+}
+
+#background {
+  padding: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2 {
+  padding: 10px 25px;
+  padding-top: 0;
+  cursor:pointer;
+}
+
+h4 {
+  grid-column: 2 / span 2;
+  font-weight: 400;
+  color: hsl(215, 51%, 70%);
+}
+
+p {
+  font-size: 16px;
+  padding: 10px 25px;
+  padding-top: 0;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+span {
+    color: var(--White);
+    cursor: pointer;
+}
+
+/*-- UTILITIES--*/
+.card {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--card-blue);
+  border-radius: 15px;
+  max-width: 20rem;
+}
+
+/*--NFT-IMAGE--*/
+.container {
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.card img {
+    position: relative;
+  border-radius: 15px;
+  max-width: 100%;
+}
+
+/*--Hover effect on img--*/
+.container::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: cyan;
+    border-radius: 15px;
+    width: 270px;
+    height: 270px;
+    left: 115px;
+    top: 75px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.view::after{
+  content: "";
+    display: block;
+    position: absolute;
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 225px;
+    top: 180px;
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+}
+
+/*--WORTH--*/
+.value {
+  display: grid;
+  position: relative;
+  grid-template-columns: 15px 1fr 1fr 15px ;
+  padding: 0px 25px;
+}
+
+.line {
+  left: 25px;
+  bottom: 0;
+  margin: 0 auto;
+  height: 10px;
+  width: 90%;
+  border-bottom: 1px solid var(--line-blue);
+}
+
+.svg {
+  position: relative;
+  align-self: center;
+  margin-right: 7px;
+}
+
+#price {
+  color: cyan;
+  grid-column: 2;
+}
+
+.date {
+    grid-column: 4 / span 2;
+}
+  
+  #clock {
+    grid-column: 3;
+    justify-self: self-end;
+}  
+
+/*--FOOTER--*/
+.avatar {
+  height: 30px;
+  width: 30px;
+  outline: var(--White) 1px solid;
+  align-self: center;
+  padding-right: 0;
+}
+
+.info {
+  display: grid;
+  padding: 10px 25px;
+  grid-template-columns: 50px 1fr 1fr;
+  align-items: center;
+}
+
+.info p {
+  align-self: end;
+  grid-column: 2 / span 2;
+  text-align: left;
+  padding-left: 0%;
+  padding-top: 10px;
+}
+
+/*--Copyright--*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*--Active-state--*/
+
+span:hover{
+    color: cyan;
+}
+
+h2:hover{
+    color: cyan;
+}
+
+.container:hover::after{
+    opacity: 0.4;
+}
+
+.view:hover::after{
+  opacity: 1;
+}
