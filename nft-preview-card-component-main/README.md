@@ -74,7 +74,7 @@ Generally, I got to practice my skill and figure where i needed to improve, whic
 
 ### Continued development
 
-I would continue to develop my css skill and js skill, currently on a 100DaysOfCode challenge, today being Day 1. i'll be posting update of my progress on twitter [https://twitter.com/not_ifeanyi](@not_ifeanyi) and hashnode [hashnode.com/@RealMire](@RealMire), i would appreciate feedbacks and do well to follow me and see how far I get, Thank you.
+I would continue to develop my css skill and js skill, currently on a 100DaysOfCode challenge, today being Day 1. i'll be posting update of my progress on twitter [@not_ifeanyi](https://twitter.com/not_ifeanyi) and hashnode [@RealMire](hashnode.com/@RealMire), i would appreciate feedbacks and do well to follow me and see how far I get, Thank you.
 
 ### Useful resources
 
